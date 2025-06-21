@@ -6,6 +6,7 @@ import Home from "./Pages/Home.jsx"
 import About from "./Pages/About.jsx"
 import Contact from "./Pages/Contact.jsx"
 import Product from "./Pages/Product.jsx"
+import Book from "./Pages/Book.jsx"
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/product" element={<Product />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/appointment" element={<Book />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

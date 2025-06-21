@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-
+import img4 from "/Images/img4.jpg"
 export default function About() {
   return (
     <motion.div
@@ -15,7 +15,7 @@ export default function About() {
         rejuvenate your body, mind, and spirit.
       </p>
       <img
-        src="https://images.unsplash.com/photo-1569936906148-06de87cb0681?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXl1cnZlZGljfGVufDB8fDB8fHww"
+        src={img4}
         alt="Clinic environment"
         className="rounded-lg shadow-lg my-6"
       />

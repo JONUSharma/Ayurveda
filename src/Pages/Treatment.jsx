@@ -33,8 +33,8 @@ export default function TreatmentCards() {
     {
       name: 'Yoga',
       image: yoga,
-      description: 'Uses medicinal herbs in steam form to open pores, detoxify and relax muscles.',
-      benefits: 'Clears skin, promotes detox, reduces joint pain.',
+      description: 'Yoga is an ancient physical, mental, and spiritual practice that originated in India.  ',
+      benefits: 'Improves flexibility and strength, Reduces stress and anxiety',
       duration: '20-30 Minutes',
     },
   ];
