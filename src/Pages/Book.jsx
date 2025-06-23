@@ -21,12 +21,6 @@ export default function Book() {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    // if (formData.name && formData.phone && formData.treatment && formData.date) {
-    //   setSubmitted(true);
-    // } else {
-    //   alert('Please fill in all required fields.');
-    // }
-
     const formData = new FormData(e.target);
 
     formData.append("access_key", "42a0bed0-761e-4b89-975d-42d6e1764cc4");

@@ -7,6 +7,7 @@ import About from "./Pages/About.jsx"
 import Contact from "./Pages/Contact.jsx"
 import Product from "./Pages/Product.jsx"
 import Book from "./Pages/Book.jsx"
+import TreatmentCards from "./Pages/Treatment.jsx"
 function App() {
 
   return (
@@ -16,9 +17,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/product" element={<Product />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/appointment" element={<Book />}></Route>
+          <Route path="/treatments" element={<TreatmentCards />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
