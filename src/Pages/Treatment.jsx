@@ -1,31 +1,35 @@
 import { motion } from 'framer-motion';
 import yoga from "/Images/yogo.jpg"
+import shidotra from "/Images/shidotra.jpg"
+import panchakarma from "/Images/panchkaram.jpg"
+import herbal from "/Images/herbal steam.jpg"
+import abhyang from "/Images/abhyang.webp"
 export default function TreatmentCards() {
   const treatments = [
     {
       name: 'Panchakarma',
-      image: 'https://picsum.photos/200?panchakarma,therapy',
+      image: panchakarma,
       description: 'A comprehensive detoxification program designed to cleanse the body of toxins and restore balance.',
       benefits: 'Improves digestion, boosts immunity, promotes mental clarity.',
       duration: '7-21 Days',
     },
     {
       name: 'Shirodhara',
-      image: 'https://picsum.photos/400/300?shirodhara,ayurveda',
+      image: shidotra,
       description: 'A relaxing therapy where warm herbal oil is poured gently over the forehead.',
       benefits: 'Relieves stress, insomnia, anxiety, and enhances focus.',
       duration: '45-60 Minutes',
     },
     {
       name: 'Abhyanga',
-      image: 'https://picsum.photos/200/300?abhyanga,massage',
+      image: abhyang,
       description: 'A traditional full-body oil massage that revitalizes the body and improves circulation.',
       benefits: 'Detoxifies, nourishes skin, relieves muscle tension.',
       duration: '60-90 Minutes',
     },
     {
       name: 'Herbal Steam Therapy',
-      image: 'https://images.pexels.com/videos/1448735/free-video-1448735.jpg?fit=crop&w=1200&h=630&auto=compress&cs=tinysrgb ',
+      image: herbal,
       description: 'Uses medicinal herbs in steam form to open pores, detoxify and relax muscles.',
       benefits: 'Clears skin, promotes detox, reduces joint pain.',
       duration: '20-30 Minutes',
@@ -48,8 +52,9 @@ export default function TreatmentCards() {
             key={index}
             className="bg-green-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition"
             whileHover={{ scale: 1.03 }}
+          
           >
-            <img src={treatment.image} alt={treatment.name} className="w-full h-48 object-cover" />
+            <img src={treatment.image} loading='lazy' alt={treatment.name} className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-2xl font-semibold text-green-800">{treatment.name}</h3>
               <p className="text-green-700 mt-2">{treatment.description}</p>

@@ -37,8 +37,9 @@ export default function Hero() {
         <motion.div
           className="text-center text-white px-4"
           initial={{ opacity: 0, y: -40 }}
+          exit={{opacity : 0, x: 1}}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to AyurVeda Healing</h1>
           <p className="text-lg md:text-xl mb-8">Your Path to Natural Wellness</p>

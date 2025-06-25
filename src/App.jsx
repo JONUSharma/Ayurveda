@@ -5,9 +5,10 @@ import Footer from "./Component/Footer.jsx"
 import Home from "./Pages/Home.jsx"
 import About from "./Pages/About.jsx"
 import Contact from "./Pages/Contact.jsx"
-import Product from "./Pages/Product.jsx"
+import Product from "./Pages/Doctors.jsx"
 import Book from "./Pages/Book.jsx"
 import TreatmentCards from "./Pages/Treatment.jsx"
+import Doctors from "./Pages/Doctors.jsx"
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/appointment" element={<Book />}></Route>
           <Route path="/treatments" element={<TreatmentCards />}></Route>
+          <Route path="/doctors" element={<Doctors />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
