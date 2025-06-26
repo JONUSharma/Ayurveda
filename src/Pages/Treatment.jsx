@@ -3,6 +3,7 @@ import yoga from "/Images/yogo.jpg"
 import shidotra from "/Images/shidotra.jpg"
 import panchakarma from "/Images/panchkaram.jpg"
 import herbal from "/Images/herbal steam.jpg"
+import { NavLink } from 'react-router-dom';
 import abhyang from "/Images/abhyang.webp"
 export default function TreatmentCards() {
   const treatments = [
@@ -62,12 +63,11 @@ export default function TreatmentCards() {
                 <p><span className="font-medium">Benefits:</span> {treatment.benefits}</p>
                 <p><span className="font-medium">Duration:</span> {treatment.duration}</p>
               </div>
-              <a
-                href="/appointment"
+                <NavLink to = "/appointment"
                 className="block mt-4 text-center bg-green-600 text-white py-2 rounded hover:bg-green-700 transition"
               >
                 Book Now
-              </a>
+              </NavLink>
             </div>
           </motion.div>
         ))}

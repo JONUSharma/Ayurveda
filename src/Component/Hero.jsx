@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import img1 from "/Images/img4.jpg"
 import img2 from "/Images/img5.jpg"
@@ -43,11 +44,11 @@ export default function Hero() {
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to AyurVeda Healing</h1>
           <p className="text-lg md:text-xl mb-8">Your Path to Natural Wellness</p>
-          <a href="/appointment">
+          <NavLink to = "/appointment">
             <button className="bg-green-600 hover:bg-green-700 transition text-white py-3 px-6 rounded shadow">
               Book Your Healing Session
             </button>
-          </a>
+          </NavLink>
         </motion.div>
       </div>
     </div>

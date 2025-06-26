@@ -3,6 +3,7 @@ import sameer from "/Images/sameera.webp"
 import sneha from "/Images/sneha patil.jpg"
 import arti from "/Images/pach_doctor.webp"
 import rajiv from "/Images/herbal_doctor.webp"
+import { NavLink } from 'react-router-dom';
 export default function Doctors() {
   const doctors = [
     {
@@ -64,12 +65,11 @@ export default function Doctors() {
                 <p><span className="font-medium">Qualificaton:</span> {doctor.qualifications}</p>
                 <p><span className="font-medium">Experience:</span> {doctor.experience}</p>
               </div>
-              <a
-                href="/appointment"
+              <NavLink to = "/appointment"
                 className="block mt-4 text-center bg-green-600 text-white py-2 rounded hover:bg-green-700 transition"
               >
                 Book Now
-              </a>
+              </NavLink>
             </div>
           </motion.div>
         ))}
